@@ -1,0 +1,54 @@
+.bg-greeny{
+    background-color: #7dc528;
+}
+
+.text-greeny, .text-greeny:hover{
+    color: #7dc528 !important;
+}
+
+
+.btn-greeny{
+    background-color: white !important;
+    color: #7dc528 !important;
+    border: #7dc528 2px solid;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.btn-greeny:hover{
+    background-color: #7dc528 !important;
+    color: white !important;
+    border: #7dc528 2px solid;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.btn-greeny-0{
+    background-color: white !important;
+    color: #7dc528 !important;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.btn-greeny-0:hover{
+    background-color: #7dc528 !important;
+    color: white !important;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.btn-greeny-select{
+    background-color: #7dc528 !important;
+    color: white !important;
+    border: #7dc528 2px solid;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.border-greeny-1{
+    border: #7dc528 2px solid;
+}
+
+.border-greeny-2{
+    border-bottom: #7dc528 4px solid;
+}

@@ -1,0 +1,38 @@
+{% extends 'greeny/template.html' %}
+{% load static %}
+{% block body %}
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh;">
+            <div class="col-12 col-md-8 m-auto text-center mt-4">
+                <div class="animate__animated animate__fadeIn">
+                    <img src="{% static 'greeny/img/logo1.png'%}" width="150vw">
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <div class="fw-bold fs-3 my-3">Welcome to</div>
+                </div>
+                <div class="animate__animated animate__fadeIn">
+                    <img src="{% static 'greeny/img/logo3.png'%}" width="250vw">
+                </div>
+                <div class="animate__animated animate__fadeIn my-5">
+                    <a href="/auth" class="btn btn-greeny rounded-pill fs-4 px-3 py-2 fw-bold"> Get Started <span class="fw-bold"><i class="bi bi-arrow-right"></i></span></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 row m-auto mb-0">
+                <nav class="navbar border-greeny-2 d-flex p-3">
+                    <a class="btn btn-greeny-0" href="/about">
+                        <span class="d-none d-md-block">About Us</span>
+                        <span class="d-block d-md-none"><i class="bi bi-person"></i></span>
+                    </a>
+                    <a class="btn btn-greeny-0" href="/terms">
+                        <span class="d-none d-md-block">Terms and Conditions</span>
+                        <span class="d-block d-md-none"><i class="bi bi-info-circle"></i></span>
+                    </a>
+                    <a class="btn btn-greeny-0" href="/privacy">
+                        <span class="d-none d-md-block">Privacy Policy</span>
+                        <span class="d-block d-md-none"><i class="bi bi-shield-exclamation"></i></span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+{% endblock %}
