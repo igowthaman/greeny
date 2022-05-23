@@ -1,0 +1,25 @@
+{% extends 'greeny/template.html' %}
+{% load static %}
+{% block body %}
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh;">
+            <div class="col-12 col-md-10 col-lg-8 m-auto mt-4">
+                <div class="animate__animated animate__fadeIn">
+                    <a href="/" class="btn btn-greeny rounded-pill"><i class="bi bi-arrow-left"></i> Home</a>
+                </div>
+                <div class="animate__animated animate__fadeIn w-100 row pb-3 m-auto">
+                    <div class="col-12 my-2">
+                        <span class="text-greeny fs-3 fw-bold text-underline"> Terms And Conditions</span>
+                    </div>
+                    <div class="col-12 p-4 fw-bold fs-4">
+                        <span class="text-greeny"><img src="{% static 'greeny/img/logo3.png'%}" width="150vw"></span> is a Google My Business management system. 
+                    </div>
+                    <div class="col-12 p-4 fw-bold fs-5">
+                        For the legal relationships established by Greeny, the general terms and conditions apply to all the users. We would like to point out that Greeny is only the intermediary technical service providers between Google and ther user.
+                        Deviating general terms and conditions will lead to reject the user.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

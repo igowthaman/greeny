@@ -14,7 +14,7 @@ def privacy(request):
     return HttpResponse("<h1>Privacy</h1>")
 
 def terms(request):
-    return HttpResponse("<h1>Terms</h1>")
+    return render(request, 'greeny/terms.html', {"title":"Greeny - Terms And Condition"})
 
 def auth_func(request):
     request.session['state'] = token_hex(8)
