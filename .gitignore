@@ -7,3 +7,14 @@ __pycache__/
 .env
 .vscode
 secret
+.bashrc
+.cache/
+.gitconfig
+.local/
+.profile
+.python_history
+.pythonstartup.py
+.ssh/
+.vimrc
+.virtualenvs/
+README.txt
