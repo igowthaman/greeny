@@ -20,7 +20,7 @@ def auth_func(request):
     request.session['state'] = token_hex(8)
     scopes = "+".join(environ.get('SCOPES').split(","))
     scopes = scopes.replace("'","")
-    auth_uri = f"https://accounts.google.com/o/oauth2/v2/auth?state={request.session['state']}&response_type=code&client_id={environ.get('CLIENT_ID')}&redirect_uri={environ.get('DOMAIN')}/auth-resp&scope={scopes}&include_granted_scopes=true&prompt=select_account"
+    auth_uri = f"https://accounts.google.com/o/oauth2/v2/auth?state={request.session['state']}&response_type=code&client_id={environ.get('CLIENT_ID')}&redirect_uri={environ.get('DOMAIN')}/auth-resp&scope={scopes}&include_granted_scopes=true&prompt=select_account&access_type=offline"
     print(auth_uri)
     return redirect(auth_uri)
 
